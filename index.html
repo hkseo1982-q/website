@@ -64,48 +64,25 @@
       gap: 10px;
     }
 
-    label {
-      font-size: 14px;
-      font-weight: 600;
-      color: #444;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 8px 12px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-size: 14px;
-      font-family: inherit;
-      margin-top: 4px;
-      transition: border-color 0.2s;
-    }
-
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #0066cc;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 80px;
-    }
-
-    button {
-      background: #0066cc;
-      color: #fff;
-      border: none;
-      padding: 14px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s;
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 18px;
       margin-top: 8px;
     }
 
-    button:hover {
-      background: #0052a3;
+    .contact-info span {
+      font-size: 24px;
+    }
+
+    .contact-info a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -124,26 +101,11 @@
   <main>
     <div class="contact-card">
       <h1>Contact Us</h1>
-      <p>Have a question? Fill out the form below and we'll get back to you.</p>
-      <form action="mailto:freedive@freedive.com" method="post" enctype="text/plain">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required>
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
+      <p>For inquiries, partnerships, or any questions, please reach out to us via email.</p>
+      <div class="contact-info">
+        <span>&#9993;</span>
+        <a href="mailto:freedive@freedive.com">freedive@freedive.com</a>
+      </div>
     </div>
   </main>
 
