@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
     }
 
     header img {
-      height: 48px;
+      height: 80px;
     }
 
     main {
@@ -42,8 +42,8 @@
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-      padding: 48px;
-      max-width: 520px;
+      padding: 32px;
+      max-width: 480px;
       width: 100%;
     }
 
@@ -61,7 +61,7 @@
     .contact-card form {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 10px;
     }
 
     label {
@@ -72,10 +72,10 @@
 
     input, textarea {
       width: 100%;
-      padding: 12px;
+      padding: 8px 12px;
       border: 1px solid #ddd;
       border-radius: 8px;
-      font-size: 15px;
+      font-size: 14px;
       font-family: inherit;
       margin-top: 4px;
       transition: border-color 0.2s;
@@ -88,7 +88,7 @@
 
     textarea {
       resize: vertical;
-      min-height: 120px;
+      min-height: 80px;
     }
 
     button {
@@ -124,25 +124,25 @@
   <main>
     <div class="contact-card">
       <h1>Contact Us</h1>
-      <p>문의사항이 있으시면 아래 양식을 작성해 주세요.</p>
+      <p>Have a question? Fill out the form below and we'll get back to you.</p>
       <form action="mailto:freedive@freedive.com" method="post" enctype="text/plain">
         <div>
-          <label for="name">이름</label>
+          <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
         </div>
         <div>
-          <label for="email">이메일</label>
+          <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
         </div>
         <div>
-          <label for="subject">제목</label>
+          <label for="subject">Subject</label>
           <input type="text" id="subject" name="subject" required>
         </div>
         <div>
-          <label for="message">메시지</label>
+          <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
         </div>
-        <button type="submit">보내기</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   </main>
